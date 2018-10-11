@@ -11,7 +11,7 @@ const dataDir = path.resolve(rootDir, 'data');
 const repositoryDir = path.resolve(dataDir, 'Pokemon-Showdown');
 
 if (!fs.existsSync(repositoryDir)) {
-	child_process.execSync('git clone https://github.com/Zarel/Pokemon-Showdown.git', {
+	child_process.execSync('git clone https://github.com/skyshayde/Pokemon-Showdown.git', {
 		cwd: dataDir,
 	});
 }

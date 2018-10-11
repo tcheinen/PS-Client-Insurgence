@@ -184,7 +184,8 @@ const Tools = {
 	resourcePrefix: (() => {
 		let prefix = '';
 		if (document.location.protocol !== 'http:') prefix = 'https:';
-		return prefix + '//play.pokemonshowdown.com/';
+		//return prefix + '//play.pokemonshowdown.com/';
+		return "file:///E:/ps_resources/play.pokemonshowdown.com/"
 	})(),
 
 	fxPrefix: (() => {
@@ -1472,6 +1473,9 @@ const Tools = {
 		let top = Math.floor(num / 12) * 30;
 		let left = (num % 12) * 40;
 		let fainted = (pokemon && pokemon.fainted ? ';opacity:.7;filter:contrast(0)' : '');
+		if(id.includes("delta")) {
+			return 'background:transparent url(' + Tools.resourcePrefix + 'sprites/deltaicons/' + id + ".png)" + fainted;
+		}
 		return 'background:transparent url(' + Tools.resourcePrefix + 'sprites/smicons-sheet.png?a4) no-repeat scroll -' + left + 'px -' + top + 'px' + fainted;
 	},
 
