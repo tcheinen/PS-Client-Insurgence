@@ -185,7 +185,7 @@ const Tools = {
 		let prefix = '';
 		if (document.location.protocol !== 'http:') prefix = 'https:';
 		//return prefix + '//play.pokemonshowdown.com/';
-		return "file:///E:/ps_resources/play.pokemonshowdown.com/"
+		return "https://storage.googleapis.com/ps-resources-insurgence/"
 	})(),
 
 	fxPrefix: (() => {
