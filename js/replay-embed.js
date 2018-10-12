@@ -19,11 +19,11 @@ requireScript('https://play.pokemonshowdown.com/js/lib/lodash.compat.js');
 requireScript('https://play.pokemonshowdown.com/js/lib/html-sanitizer-minified.js');
 requireScript('https://play.pokemonshowdown.com/js/lib/soundmanager2-nodebug-jsmin.js');
 requireScript('https://play.pokemonshowdown.com/js/config.js?a7');
-requireScript('https://play.pokemonshowdown.com/js/battledata.js?a7');
-requireScript('https://play.pokemonshowdown.com/data/pokedex-mini.js?a7');
-requireScript('https://play.pokemonshowdown.com/data/pokedex-mini-bw.js?a7');
-requireScript('https://play.pokemonshowdown.com/data/graphics.js?a7');
-requireScript('https://play.pokemonshowdown.com/js/battle.js?a7');
+requireScript('http://storage.googleapis.com/ps-resources-insurgence/psclient/js/battledata.js?a7');
+requireScript('http://storage.googleapis.com/ps-resources-insurgence/psclient/data/pokedex-mini.js?a7');
+requireScript('http://storage.googleapis.com/ps-resources-insurgence/psclient/data/pokedex-mini-bw.js?a7');
+requireScript('http://storage.googleapis.com/ps-resources-insurgence/psclient/data/graphics.js?a7');
+requireScript('http://storage.googleapis.com/ps-resources-insurgence/psclient/js/battle.js?a7');
 
 var Replays = {
 	init: function (log) {
