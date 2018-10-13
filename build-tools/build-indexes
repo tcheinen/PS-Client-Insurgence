@@ -17,7 +17,7 @@ if (!fs.existsSync(repositoryDir)) {
 }
 
 process.stdout.write("Syncing data from Git repository... ");
-//child_process.execSync('git pull', {cwd: repositoryDir});
+child_process.execSync('git pull', {cwd: repositoryDir});
 console.log("DONE");
 
 const Tools = require('../data/Pokemon-Showdown/sim/dex');
