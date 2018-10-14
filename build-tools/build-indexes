@@ -739,7 +739,7 @@ process.stdout.write("Building `data/moves,items,abilities,typechart,learnsets.j
  *********************************************************/
 
 {
-	const Items = requireNoCache('../data/Pokemon-Showdown/data/items.js').BattleItems;
+	const Items = Object.assign(requireNoCache('../data/Pokemon-Showdown/data/items.js').BattleFormatsData, requireNoCache('../data/Pokemon-Showdown/mods/insurgence/items.js').BattleFormatsData);
 	const buf = 'exports.BattleItems = ' + es3stringify(Items) + ';';
 	fs.writeFileSync(path.resolve(dataDir, 'items.js'), buf);
 }
